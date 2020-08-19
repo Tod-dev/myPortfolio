@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./WorkInProgressPage.css";
 import logo from "../images/logo.png";
@@ -9,13 +9,26 @@ import linkedin from "../images/linkedin.png";
 import Icon from "../components/Icon";
 
 const WorkInProgressPage = () => {
+  //console.log(document.body.offsetWidth);
+  const [width, setWidth] = useState(document.body.offsetWidth);
+  const updateWidthAndHeight = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateWidthAndHeight);
+    return () => window.removeEventListener("resize", updateWidthAndHeight);
+  });
   return (
     <div className="Colonna fullSpace centered">
       <img
         src={work}
         alt="work in progress"
         className="rotate responsiveImg"
-        style={{ width: "20vw", position: "absolute", top: "10vw" }}
+        style={{
+          width: "20vw",
+          position: "absolute",
+          top: width < 500 ? "80vw" : width < 700 ? "30vw" : "10vw",
+        }}
       />
       <img src={logo} alt="That's my logo" className="responsiveImg" />
 
