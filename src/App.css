@@ -1,20 +1,25 @@
 .App {
-  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 .App-description {
-  color: rgb(12, 107, 12);
-  font-size: xx-large;
+  color: #0c6b0c;
+  font-size: 3.5vw;
 }
 
 .text {
-  margin-right: 15px;
+  text-align: center;
 }
-.row {
-  flex-direction: row;
+.fullHeight {
+  height: 100vh;
+}
+
+.responsiveImg {
+  max-width: 80% !important;
+  height: auto;
 }
 
 /*animation*/
