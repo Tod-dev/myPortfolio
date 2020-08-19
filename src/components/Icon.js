@@ -12,6 +12,7 @@ const Icon = (props) => {
       src={imageUrl}
       alt={name}
       className="pointer iconSize"
+      style={props.style}
       onClick={imageClickedHandler}
       roundedCircle
     />

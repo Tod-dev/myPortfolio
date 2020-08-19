@@ -18,6 +18,9 @@ const WorkInProgressPage = () => {
     window.addEventListener("resize", updateWidthAndHeight);
     return () => window.removeEventListener("resize", updateWidthAndHeight);
   });
+  const style = {
+    iconSize: width < 500 ? "10vw" : "5vw",
+  };
   return (
     <div className="Colonna fullSpace centered">
       <img
@@ -48,16 +51,19 @@ const WorkInProgressPage = () => {
           name="gitHub"
           imageUrl={github}
           link="https://github.com/Tod-dev"
+          style={{ width: style.iconSize, height: style.iconSize }}
         />
         <Icon
           name="Instagram"
           imageUrl={ig}
           link="https://www.instagram.com/marc0todar0/"
+          style={{ width: style.iconSize, height: style.iconSize }}
         />
         <Icon
           name="linkedin"
           imageUrl={linkedin}
           link="https://www.linkedin.com/in/marco-todaro-155bb5195/"
+          style={{ width: style.iconSize, height: style.iconSize }}
         />
       </div>
     </div>
