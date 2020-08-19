@@ -1,18 +1,14 @@
 import React from "react";
-import "./App.css";
+import Container from "react-bootstrap/Container";
 
-import logo from "./images/logo.png";
+import "./App.css";
+import WorkInProgressPage from "./pages/WorkInProgressPage";
+
 function App() {
   return (
-    <div className="App">
-      <img src={logo} alt="That's my logo" className="responsiveImg" />
-      <p className="App-description">
-        My portfolio is currently under development
-        <span role="img" aria-label="work in progress" className="wave">
-          ⚙️
-        </span>
-      </p>
-    </div>
+    <Container className="App">
+      <WorkInProgressPage />
+    </Container>
   );
 }
 
