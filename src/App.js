@@ -6,7 +6,7 @@ import WorkInProgressPage from "./pages/WorkInProgressPage";
 
 function App() {
   return (
-    <Container className="App">
+    <Container className="fullSpace">
       <WorkInProgressPage />
     </Container>
   );
