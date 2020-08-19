@@ -39,13 +39,13 @@ code {
   height: 100vh;
 }
 .responsiveImg {
-  max-width: 80% !important;
+  max-width: 80%;
   height: auto;
 }
 
 .iconSize {
-  width: 4vw;
-  height: 4vw;
+  width: 5vw;
+  height: 5vw;
 }
 
 .pointer {

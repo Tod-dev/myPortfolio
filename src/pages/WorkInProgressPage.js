@@ -2,6 +2,7 @@ import React from "react";
 
 import "./WorkInProgressPage.css";
 import logo from "../images/logo.png";
+import work from "../images/work.png";
 import github from "../images/github.png";
 import ig from "../images/instagram.png";
 import linkedin from "../images/linkedin.png";
@@ -10,10 +11,14 @@ import Icon from "../components/Icon";
 const WorkInProgressPage = () => {
   return (
     <div className="Colonna fullSpace centered">
+      <img
+        src={work}
+        alt="work in progress"
+        className="rotate responsiveImg"
+        style={{ width: "20vw", position: "absolute", top: "10vw" }}
+      />
       <img src={logo} alt="That's my logo" className="responsiveImg" />
-      <span role="img" aria-label="work in progress" className="wave">
-        ⚙️
-      </span>
+
       <p className="App-description">
         My portfolio is currently under development
       </p>

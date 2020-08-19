@@ -1,7 +1,6 @@
-.wave {
-  font-size: 4vw;
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 1.5s; /* Change to speed up or slow down */
+.rotate {
+  animation-name: rotation-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   display: inline-block;
   padding: 0 !important;
@@ -9,39 +8,21 @@
 }
 
 /*animation*/
-@keyframes wave-animation {
+@keyframes rotation-animation {
   0% {
     transform: rotate(0deg);
   }
-  10% {
-    transform: rotate(36deg);
-  }
-  20% {
-    transform: rotate(72deg);
-  }
-  30% {
-    transform: rotate(108deg);
-  }
-  40% {
-    transform: rotate(144deg);
+  25% {
+    transform: rotate(-20deg);
   }
   50% {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
-  60% {
-    transform: rotate(216deg);
-  }
-  70% {
-    transform: rotate(252deg);
-  }
-  80% {
-    transform: rotate(288deg);
-  }
-  90% {
-    transform: rotate(324deg);
+  75% {
+    transform: rotate(30deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
